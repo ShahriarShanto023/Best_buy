@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_black"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_view_sign_up_cover_pic"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/background_radial"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/image_view_sign_up_profile_pic"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/man"
+                android:scaleType="fitXY" />
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/edit_text_sign_up_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/NavajoWhite"
+            android:textColorHint="@color/SlateGray"
+            android:hint="User Name"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit_text_sign_up_user_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/NavajoWhite"
+            android:textColorHint="@color/SlateGray"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/edit_text_sign_up_user_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/NavajoWhite"
+            android:textColorHint="@color/SlateGray"
+            android:hint="Address"
+            android:inputType="textPostalAddress"
+            android:textAlignment="center"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/edit_text_sign_up_user_phone_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/NavajoWhite"
+            android:textColorHint="@color/SlateGray"
+            android:hint="Phone 1"
+            android:inputType="phone"
+            android:textAlignment="center"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/edit_text_sign_up_user_phone_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/NavajoWhite"
+            android:textColorHint="@color/SlateGray"
+            android:hint="Phone 2"
+            android:inputType="phone"
+            android:textAlignment="center"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edit_text_sign_up_user_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/NavajoWhite"
+                android:textColorHint="@color/SlateGray"
+                android:layout_weight="1"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textSize="17sp" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/button_sign_up_show_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="3"
+                android:background="@drawable/gradient_red"
+                android:text="Show"
+                android:textColor="@color/Gold" />
+        </LinearLayout>
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/button_sign_up_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/gradient_white"
+            android:text="@string/sign_up"
+            android:textColor="@color/Gold"/>
+    </LinearLayout>
+</ScrollView>
